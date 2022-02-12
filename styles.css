@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Arimo&family=Bungee+Inline&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Archivo', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    background: linear-gradient(to right, rgb(35, 136, 127), rgb(158, 218, 62));
+}
+
+.navigaton {
+    position: fixed;
+    width: 100%;
+    background: rgb(105, 173, 49);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+    box-shadow: 0px 2px 12px 0px rgb(0 0 0 / 50%);
+}
+.brand {
+    font-size: 55px;
+    padding: 5px;
+    font-weight: 900;
+    color: rgb(235, 235, 235);
+    text-shadow: 2px 2px 3px #0000007d;
+}
+.navigaton div {
+    display: flex;
+    align-items: center;
+}
+.link {
+    background: #ffffff75;
+    margin: 0 5px;
+    padding: 10px 15px;
+    border-radius: 3px;
+    text-transform: capitalize;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.link:hover {
+    background: #ffffffc2;
+}
+
+.container {
+    height: 200vh;
+}
+
+
+
+/*
+font-family: 'Archivo', sans-serif;
+font-family: 'Arimo', sans-serif;
+font-family: 'Bungee Inline', cursive;
+
+*/
