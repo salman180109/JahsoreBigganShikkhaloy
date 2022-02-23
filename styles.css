@@ -45,6 +45,9 @@ body {
 .link:hover {
     background: #ffffffc2;
 }
+.menu {
+    display: none !important;
+}
 
 .container {
     padding: 20px;
@@ -76,6 +79,24 @@ body {
     line-height: 53px;
 }
 
+.headText {
+    width: 100%;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.headPart {
+    display: inline-block;
+    text-align: center;
+    font-size: 70px;
+    padding: 20px;
+    font-weight: 900;
+    color: #14535e;
+    text-shadow: 2px 1px 3px #000000c2;
+}
+
 
 /*
 font-family: 'Archivo', sans-serif;
@@ -83,3 +104,52 @@ font-family: 'Arimo', sans-serif;
 font-family: 'Bungee Inline', cursive;
 
 */
+
+@media (max-width:750px) and (min-width: 350px) {
+    .navigaton {
+        max-width: 100%;
+        overflow: visible;
+    }
+    .links {
+        position: absolute !important;
+        flex-direction: column;
+        gap: 15px;
+        background: rgba(52, 161, 80, 0.685);
+        width: 60vw;
+        height: 100vh;
+        top: 0;
+        right: -60vw;
+        justify-content: center;
+        transition: 0.4s all;
+    }
+    .link {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        border-radius: 2px;
+    }
+    .menu {
+        display: flex !important;
+        color: white !important;
+        cursor: pointer;
+        font-size: 30px !important;
+        z-index: 999;
+    }
+    .author-details {
+        color: #ffffffa8;
+        font-size: 150%;
+        text-shadow: 3px 2px 9px rgb(0 0 0 / 50%);
+        letter-spacing: 1px;
+        word-spacing: 5px;
+        line-height: 53px;
+    }
+    .headText {
+        overflow-x: hidden;
+    }
+    .headPart {
+        font-size: 5vw;
+        padding: 10px;
+        font-weight: 700;
+    }
+}
