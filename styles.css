@@ -15,6 +15,19 @@ body {
     background: linear-gradient(to right, rgb(35, 136, 127), rgb(158, 218, 62));
 }
 
+.swiper-container {
+    width: 80%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    border-radius: 15px;
+  }
+
 .navigaton {
     position: fixed;
     width: 100%;
@@ -24,6 +37,7 @@ body {
     align-items: center;
     padding: 0 25px;
     box-shadow: 0px 2px 12px 0px rgb(0 0 0 / 50%);
+    z-index: 99999;
 }
 .brand {
     font-size: 55px;
@@ -96,22 +110,28 @@ body {
 }
 
 
-.tutorial {
+.tutorial, .courses {
     position: relative;
     margin: 20px auto;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 /* SEC NAME */
 .secName {
     display: inline-block;
     position: relative;
     text-align: center;
+    font-family: 'Arimo', sans-serif;
     font-size: 40px;
     padding: 20px 45px;
     text-transform: uppercase;
-    background: rgba(255, 255, 255, 0.603);
+    background: rgba(112, 218, 98, 0.747);
     border-radius: 15px 0;
+    color: rgb(110, 75, 190);
+    font-weight: 900;
+    border: 2px solid rgb(110, 75, 190);
+    box-shadow: 0px 0px 16px 1px rgba(0,0,0,0.3);
 }
 .secName::after, .secName::before {
     content: '';
@@ -217,4 +237,16 @@ font-family: 'Bungee Inline', cursive;
         padding: 10px;
         font-weight: 700;
     }
+    .swiper-container {
+        width: 80%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 80vw;
+        aspect-ratio: 1;
+        border-radius: 15px;
+      }
 }
