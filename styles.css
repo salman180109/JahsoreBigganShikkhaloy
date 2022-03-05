@@ -19,6 +19,7 @@ body {
     width: 80%;
     padding-top: 50px;
     padding-bottom: 50px;
+    overflow: hidden;
   }
   .swiper-slide {
     background-position: center;
@@ -106,7 +107,6 @@ body {
     background: #bcfd4cb6;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
 }
 
 
@@ -116,6 +116,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 /* SEC NAME */
 .secName {
